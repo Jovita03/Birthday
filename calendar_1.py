@@ -24,7 +24,7 @@ def dias_restantes(fecha_str):
         proximo = datetime(hoy.year + 1, cumple.month, cumple.day)
     return (proximo - hoy).days
 
-# ---------- Funciones para la interfaz ----------
+
 def ver_cumpleaños():
     if not cumpleaños:
         messagebox.showinfo("Cumpleaños", "No hay cumpleaños registrados.")
@@ -86,7 +86,7 @@ def mostrar_dias_faltantes():
             resultado += f"Fecha inválida para {nombre}: {fecha}\n"
     messagebox.showinfo("Días restantes", resultado.strip())
 
-# ---------- Ventana principal ----------
+
 cumpleaños = cargar_cumpleaños()
 
 ventana = tk.Tk()
